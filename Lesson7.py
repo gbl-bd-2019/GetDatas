@@ -25,13 +25,13 @@ nom1 = 1
 for i in regions:
     print(nom1, i)
     nom1 = nom1 + 1
-sel_reg = int(input('Выберите регион (введите число): ')) - 1
+sel_reg = int(input('Р’С‹Р±РµСЂРёС‚Рµ СЂРµРіРёРѕРЅ (РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ): ')) - 1
 
 nom1 = 1
 for i in names:
     print(nom1, i)
     nom1 = nom1 + 1
-sel_name = int(input('Выберите интересующие данные (введите число): ')) - 1
+sel_name = int(input('Р’С‹Р±РµСЂРёС‚Рµ РёРЅС‚РµСЂРµСЃСѓСЋС‰РёРµ РґР°РЅРЅС‹Рµ (РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ): ')) - 1
 
 # print(regions[sel_reg], names[sel_name])
 
@@ -47,8 +47,8 @@ with open('opendata.csv','r') as f:
 # print(dates)
 
 # d_min = '01.01.2016'
-print(f"Возможный диапазон дат: {dates[0].strftime('%d.%m.%y')} - {dates[-1].strftime('%d.%m.%y')}")
-sel_dates = input('введите интересующий диапазон в формате ДД.ММ.ГГ - ДД.ММ.ГГ: ')
+print(f"Р’РѕР·РјРѕР¶РЅС‹Р№ РґРёР°РїР°Р·РѕРЅ РґР°С‚: {dates[0].strftime('%d.%m.%y')} - {dates[-1].strftime('%d.%m.%y')}")
+sel_dates = input('РІРІРµРґРёС‚Рµ РёРЅС‚РµСЂРµСЃСѓСЋС‰РёР№ РґРёР°РїР°Р·РѕРЅ РІ С„РѕСЂРјР°С‚Рµ Р”Р”.РњРњ.Р“Р“ - Р”Р”.РњРњ.Р“Р“: ')
 d_min = sel_dates[:8]
 d_max = sel_dates[11:]
 
